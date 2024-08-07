@@ -15,7 +15,7 @@ const LocationToCoordinates = async (locationString) => {
     return locationData;
   } catch (error) {
     console.error("Error:", error);
-    return await Promise.reject(error);
+    return Promise.reject(error);
   }
 };
 
